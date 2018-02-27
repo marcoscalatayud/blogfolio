@@ -1,0 +1,15 @@
+- title: my blog
+  link: '/blog'
+  description: Read my posts about design in
+- title: Twitter
+  link: 'https://twitter.com/marcoscalatayud'
+  description: Stay updated about frontend design on
+- title: Github
+  link: 'https://github.com/marcoscalatayud'
+  description: Take a peek at how I built this site on
+- title: Flickr
+  link: 'https://www.flickr.com/photos/62410730@N06/'
+  description: Enjoy the pictures I take on
+- title: LinkedIn
+  link: 'https://www.linkedin.com/in/marcoscalatayud/'
+  description: Take a look at my resumé on

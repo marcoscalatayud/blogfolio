@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Process - Marcos Calatayud - UX designer"
+navname: Process
+---
+<section class="mc-Section">
+  <header class="mc-Section_Header">
+    <div class="layout-Content-maxWidth">
+      <h1 class="mc-Section_Heading">{{ page.navname }}</h1>
+    </div>
+  </header>
+  <div class="mc-Section_Body">
+    <ol class="mc-Process">
+      {% for step in site.data.process %}
+        <li class="mc-Process_Step {{step.step}}">
+          <header class="mc-Process_Header">
+            <h2 class="mc-Process_Title">{{ step.title }}</h2>
+            <p class="mc-Process_Explanation"> {{ step.explanation }}</p>
+          </header>
+          <ul class="mc-Process_Examples">
+            {% for type in step.substep %}
+              <li class="mc-Process_Example">{{ type.title }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

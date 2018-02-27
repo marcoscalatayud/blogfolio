@@ -1,0 +1,19 @@
+<header class="layout-MainHeader">
+  <div class="layout-MainHeader_Content">
+    <p class="mc-Header">
+      <a class="mc-Name" href="{{ site.baseurl }}/">Marcos Calatayud
+        <span class="mc-Role">Designer</span>
+      </a>
+    </p>
+
+    <nav class="mc-MainNavigation">
+      <ol class="mc-Menu">
+        {% for section in site.data.navigation %}
+          <li class="mc-Menu_Item">
+              <a class="mc-Menu_Link{% if page.navname == section.title %}-active{% endif %}" href="{{section.url}}">{{section.title}}</a>
+          </li>
+        {% endfor %}
+      </ol>
+    </nav>
+  </div><!-- .layout-content-maxwidth -->
+</header>

@@ -1,0 +1,19 @@
+# Site settings
+title: "Marcos Calatayud - UX designer"
+email: marc.calatayud.mallent@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is where I write some of my thoughts about design and development.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://marcos-calatayud.com" # the base hostname & protocol for your site
+twitter_username: marcoscalatayud
+linkedin_username: marcoscalatayud
+github_username:  marcoscalatayud
+markdown: kramdown
+timezone: Europe/Madrid
+encoding: utf-8
+permalink: /blog/:title/
+
+exclude: [s3_website.yml, aws.json, deploy.sh,
+node_modules, styles,
+package.json, gulpfile.js, package_old.json, package-lock.json,
+postcss.config.js, styles_OLD.zip]

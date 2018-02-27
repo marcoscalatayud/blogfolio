@@ -1,0 +1,28 @@
+.mc-MainNavigation {
+  @media screen and (max-width: 48rem) {
+    margin-top: calc(-1 * var(--layout-unit-8));
+  }
+}
+
+.mc-Menu {
+  display: flex;
+  list-style: none;
+  margin-top: var(--layout-unit-24);
+}
+
+.mc-Menu_Item {
+  &:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.mc-Menu_Link,
+.mc-Menu_Link-active {
+  font-family: var(--font-family-sans);
+  text-decoration: none;
+}
+
+.mc-Menu_Link-active {
+  padding-bottom: .9rem;
+  border-bottom: .25rem solid;
+}

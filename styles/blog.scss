@@ -1,0 +1,22 @@
+.mc-Section_Heading {
+  border-bottom: .25rem solid;
+  padding-bottom: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.mc-ListPosts {
+  list-style: none;
+  max-width: var(--layout-content-max-width);
+}
+
+.mc-ListPosts_Item {
+  padding: 0;
+  margin-bottom: var(--layout-unit-32);
+}
+
+.mc-ListPosts_Date {
+  display: block;
+  margin-bottom: calc(-1 * var(--layout-unit-8));
+}
+
+// .mc-ListPosts_Title {}

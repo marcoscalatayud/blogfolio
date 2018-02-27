@@ -1,0 +1,43 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{{ page.title }}</title>
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}?2">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <!-- In most cases, one 180×180px touch icon in the head is enough -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Standard favicons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+
+  <!-- Safari mac OS -->
+  <link rel="mask-icon" href="icon.svg" color="black">
+
+  <!-- Android -->
+  <!-- Google Chrome mobile add to homescreen -->
+  <link rel="icon" sizes="192x192" href="/favicon-192.png">
+  <!-- Location bar background color -->
+  <meta name="theme-color" content="#bc2f2f">
+
+  <!-- Windows tile styling -->
+  <meta name="msapplication-TileColor" content="#bc2f2f">
+	<meta name="msapplication-TileImage" content="/favicon-144.png">
+
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-41157153-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>

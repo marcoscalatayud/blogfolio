@@ -1,0 +1,48 @@
+{
+  "name": "basic",
+  "description": "Basic npm script static site builder",
+  "version": "0.0.1",
+  "author": "Marcos",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
+    "clean-css-cli": "*",
+    "css-mqpacker": "^6.0.2",
+    "html-minifier": "^3.5.9",
+    "knox": "*",
+    "node-fs": "*",
+    "node-notifier": "^5.2.1",
+    "onchange": "^3.3.0",
+    "postcss": "^6.0.19",
+    "postcss-cli": "^5.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-load-config": "*",
+    "postcss-nested": "^3.0.0",
+    "postcss-scss": "^1.0.4",
+    "postcss-strip-inline-comments": "*",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^8.4.0",
+    "stylelint-order": "^0.8.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "scripts": {
+    "clean": "rm -r _site/*",
+    "buildsite": "jekyll build",
+    "bsyncsite": "browser-sync start --server '_site' --files _site/css/*.css",
+    "build:css": "postcss styles/master.scss -o _site/css/styles.css -c postcss.config.js",
+    "minify:css": "cleancss -o _site/css/styles.css _site/css/styles.css",
+    "watch:css": "onchange 'styles/*.scss' -- npm run build:css",
+    "lint": "stylelint styles/*.scss",
+    "preserver": "npm run clean & npm run buildsite & npm run build:css",
+    "server": "npm run bsyncsite & npm run watch:css",
+    "htmlmin": "html-minifier --collapse-whitespace --remove-comments --input-dir _site --output-dir _site --file-ext html",
+    "staticserver": "python -m SimpleHTTPServer 8000",
+    "sssbuild:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"
+  },
+  "dependencies": {
+    "stylefmt": "^6.0.0"
+  }
+}
