@@ -6,20 +6,20 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.23.6",
-    "clean-css-cli": "*",
+    "browser-sync": "^2.24.4",
+    "clean-css-cli": "^4.1.11",
     "css-mqpacker": "^6.0.2",
-    "html-minifier": "^3.5.9",
+    "html-minifier": "^3.5.16",
     "knox": "*",
     "node-fs": "*",
     "node-notifier": "^5.2.1",
     "onchange": "^3.3.0",
-    "postcss": "^6.0.19",
+    "postcss": "^6.0.22",
     "postcss-cli": "^5.0.0",
     "postcss-import": "^11.1.0",
     "postcss-load-config": "*",
     "postcss-nested": "^3.0.0",
-    "postcss-scss": "^1.0.4",
+    "postcss-scss": "^1.0.5",
     "postcss-strip-inline-comments": "*",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^8.4.0",
@@ -43,6 +43,7 @@
     "sssbuild:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"
   },
   "dependencies": {
+    "npm": "^5.10.0",
     "stylefmt": "^6.0.0"
   }
 }
