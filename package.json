@@ -5,25 +5,22 @@
   "author": "Marcos",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "^7.2.6",
-    "browser-sync": "^2.24.4",
-    "clean-css-cli": "^4.1.11",
-    "css-mqpacker": "^6.0.2",
-    "html-minifier": "^3.5.16",
-    "knox": "*",
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "clean-css-cli": "*",
+    "css-mqpacker": "*",
+    "html-minifier": "*",
     "node-fs": "*",
-    "node-notifier": "^5.2.1",
-    "onchange": "^3.3.0",
-    "postcss": "^6.0.22",
-    "postcss-cli": "^5.0.0",
-    "postcss-import": "^11.1.0",
+    "onchange": "*",
+    "postcss": "*",
+    "postcss-cli": "*",
+    "postcss-import": "*",
     "postcss-load-config": "*",
-    "postcss-nested": "^3.0.0",
-    "postcss-scss": "^1.0.5",
+    "postcss-nested": "*",
+    "postcss-scss": "*",
     "postcss-strip-inline-comments": "*",
-    "prettier-stylelint": "^0.4.2",
-    "stylelint": "^8.4.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint": "*",
+    "stylelint-order": "*"
   },
   "browserslist": [
     "last 2 versions"
@@ -43,7 +40,7 @@
     "sssbuild:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"
   },
   "dependencies": {
-    "npm": "^5.10.0",
-    "stylefmt": "^6.0.0"
+    "npm": "*",
+    "stylefmt": "*"
   }
 }
