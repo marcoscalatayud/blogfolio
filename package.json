@@ -6,7 +6,7 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "*",
-    "browser-sync": "*",
+    "browser-sync": "^2.26.0",
     "clean-css-cli": "*",
     "css-mqpacker": "*",
     "html-minifier": "*",
