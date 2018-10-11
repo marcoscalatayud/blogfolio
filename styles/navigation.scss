@@ -11,7 +11,9 @@
 }
 
 .mc-Menu_Item {
+
   &:not(:first-child) {
+    margin-top: 0;
     margin-left: 2rem;
   }
 }

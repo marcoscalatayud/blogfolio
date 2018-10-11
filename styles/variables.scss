@@ -1,8 +1,10 @@
 :root {
-  --color-background: #fff;
+  --color-background: hsla(50, 100%, 99%, 1);
   --color-link: #bc2f2f;
+  --color-link: #317ab1;
   --color-normal: #222;
   --color-faded: #555;
+  --color-border: #bbb;
   --color-educapoker: #3f7eca;
 
   --font-size-h1: 2.5rem;
@@ -14,8 +16,8 @@
   --layout-unit-8: .5rem;
   --layout-unit-16: 1rem;
   --layout-unit-24: 1.5rem;
-  --layout-unit-32: 3rem;
-  --layout-unit-48: 4.5rem;
+  --layout-unit-32: 2rem;
+  --layout-unit-48: 3rem;
 
   @media screen and (min-width: 48rem) {
     --layout-container-max-width: 73.75rem;

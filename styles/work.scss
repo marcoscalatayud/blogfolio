@@ -1,12 +1,13 @@
 .mc-ListCompanies {
   list-style: none;
-  padding-top: 1rem;
+  padding-top: 24px;
 }
 
 .mc-ListCompanies_Item {
   padding: 0;
 
   &:not(:last-child) {
+    margin-top: 0;
     margin-bottom: var(--layout-unit-48);
   }
 
@@ -34,7 +35,12 @@
   grid-row: 1;
 }
 
-// .mc-Company_Main {}
+.mc-Company_Main {
+  
+  h3 {
+    margin-top: -26px;
+  }
+}
 
 .mc-Company_Date {
   @media screen and (min-width: 48rem) {

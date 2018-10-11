@@ -5,8 +5,8 @@
 
 .layout-area-hero {
   padding-top: 240px;
-  padding-bottom: var(--layout-unit-32);
-  margin-bottom: var(--layout-unit-32);
+  padding-bottom: var(--layout-unit-24);
+  margin-bottom: var(--layout-unit-24);
   background-color: var(--color-educapoker);
 }
 
@@ -53,13 +53,13 @@ img {
 
 .case-grid {
   // max-width: var(--layout-container-max-width);
-  padding: var(--layout-unit-32) 0;
+  padding: var(--layout-unit-24) 0;
   margin: auto;
 
   @media screen and (min-width: 48rem) {
     display: grid;
     grid-template-columns: auto 30rem minmax(auto, 50%);
-    grid-gap: var(--layout-unit-32);
+    grid-gap: var(--layout-unit-24);
   }
 }
 
@@ -72,9 +72,17 @@ img {
 }
 
 li li {
+  padding: .5rem 0 1rem;
+
+  &:not(:first-child) {
+    margin-top: -24px;
+  }
+}
+
+li ul {
+  margin-top: -8px;
+  margin-bottom: 8px;
   margin-left: 1rem;
-// margin-bottom: -1.5rem;
-  padding: 0;
 }
 
 .followup {

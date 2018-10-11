@@ -50,11 +50,15 @@ h2 {
 }
 
 h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: -2px;
+  margin-bottom: 1.125rem;
   font-size: var(--font-size-h3);
   font-weight: normal;
   line-height: 2rem;
+
+  &:not(:first-child) {
+    padding-top: 24px;
+  }
 }
 
 h4,
@@ -75,6 +79,10 @@ li {
   padding-top: .5rem;
   padding-bottom: 1rem;
   line-height: 1.5;
+
+  &:not(:first-child) {
+    margin-top: -24px;
+  }
 }
 
 a {
@@ -88,15 +96,14 @@ ul {
 }
 
 blockquote {
-  margin-bottom: var(--layout-unit-24);
 
   &::before {
     content: "“";
     position: absolute;
-    left: -.5rem;
+    top: 3px;
+    left: -1.5rem;
     color: var(--color-faded);
     font-size: var(--font-size-h1);
-    line-height: 1;
   }
 }
 

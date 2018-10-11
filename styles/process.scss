@@ -2,7 +2,6 @@
   list-style: none;
   counter-reset: counter;
   max-width: var(--layout-content-max-width);
-  padding-top: 1rem;
   margin: auto;
 }
 
@@ -72,7 +71,9 @@
 
 // .mc-Process_Explanation {}
 
-// .mc-Process_Examples {}
+.mc-Process_Examples {
+  margin: 0;
+}
 
 .mc-Process_Example {
   padding-top: .5rem;
