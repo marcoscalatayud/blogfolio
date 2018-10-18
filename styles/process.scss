@@ -6,12 +6,8 @@
 }
 
 .mc-Process_Step {
-  padding: 0;
-  margin: 0;
-
-  @media screen and (min-width: 48rem) {
-    max-width: 50%;
-  }
+  padding: 0 0 0 4rem;
+  margin: 0 0 var(--layout-unit-48);
 }
 
 .mc-Process_Step::before {
@@ -19,50 +15,20 @@
   content: counter(counter);
   display: block;
   position: absolute;
-  top: 50%;
-  width: 2rem;
-  height: 2rem;
+  top: var(--layout-unit-24);
+  left: 0;
+  width: var(--layout-unit-32);
+  height: var(--layout-unit-32);
   background: var(--color-normal);
   border-radius: 100%;
   color: var(--color-background);
   font-size: var(--font-size-small);
-  line-height: 2rem;
+  line-height: var(--layout-unit-32);
   text-align: center;
   transform: scale(2);
 }
 
-.mc-Process_Step:nth-child(even) {
-  padding-left: 4rem;
-
-  @media screen and (min-width: 48rem) {
-    margin-left: auto;
-  }
-}
-
-.mc-Process_Step:nth-child(odd) {
-  @media screen and (max-width: 48rem) {
-    padding-left: 4rem;
-  }
-
-  @media screen and (min-width: 48rem) {
-    padding-right: 4rem;
-  }
-}
-
-.mc-Process_Step1::before,
-.mc-Process_Step3::before {
-  @media screen and (max-width: 48rem) {
-    left: -1rem;
-  }
-
-  @media screen and (min-width: 48rem) {
-    right: -1rem;
-  }
-}
-
-.mc-Process_Step2::before,
-.mc-Process_Step4::before {
-  left: -1rem;
+.mc-Process_Step::before {
 }
 
 // .mc-Process_Header {}

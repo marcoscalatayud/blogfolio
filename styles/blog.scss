@@ -12,11 +12,11 @@
 .mc-ListPosts_Item {
   display: grid;
   align-items: baseline;
-  grid-gap: 0 24px;
+  grid-gap: 0 var(--layout-unit-24);
   grid-template-columns: auto 1fr;
   padding: 0;
   margin-bottom: var(--layout-unit-24);
-  
+
   &:not(:first-child) {
     margin-top: auto;
   }

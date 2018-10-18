@@ -14,7 +14,7 @@
 
   &:not(:first-child) {
     margin-top: 0;
-    margin-left: 2rem;
+    margin-left: var(--layout-unit-24);
   }
 }
 
