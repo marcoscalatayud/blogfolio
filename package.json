@@ -6,11 +6,9 @@
   "private": true,
   "devDependencies": {
     "autoprefixer": "*",
-    "browser-sync": "^2.26.0",
-    "clean-css-cli": "*",
+    "browser-sync": "*",
     "css-mqpacker": "*",
     "html-minifier": "*",
-    "node-fs": "*",
     "onchange": "*",
     "postcss": "*",
     "postcss-cli": "*",
