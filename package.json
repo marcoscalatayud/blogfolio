@@ -5,19 +5,18 @@
   "author": "Marcos",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "*",
-    "browser-sync": "*",
-    "css-mqpacker": "*",
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
     "html-minifier": "*",
     "onchange": "*",
-    "postcss": "*",
+    "postcss": "^7.0.17",
     "postcss-cli": "*",
     "postcss-import": "*",
-    "postcss-load-config": "*",
+    "postcss-load-config": "^2.1.0",
     "postcss-nested": "*",
     "postcss-scss": "*",
     "postcss-strip-inline-comments": "*",
-    "stylelint": "*",
+    "stylelint": "^10.1.0",
     "stylelint-order": "*"
   },
   "browserslist": [
@@ -36,9 +35,5 @@
     "htmlmin": "html-minifier --collapse-whitespace --remove-comments --input-dir _site --output-dir _site --file-ext html",
     "staticserver": "python -m SimpleHTTPServer 8000",
     "sssbuild:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"
-  },
-  "dependencies": {
-    "npm": "*",
-    "stylefmt": "*"
   }
 }
