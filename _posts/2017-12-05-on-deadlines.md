@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "An approach on deadlines"
-date:   2017-12-12 10:00:00
+title: "An approach on deadlines"
+date: 2017-12-12 10:00:00
 categories: blog development writing management
 abstract: "Never take a deadline as an objective itself."
 ---

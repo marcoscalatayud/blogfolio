@@ -9,14 +9,14 @@ navname: Blog
     <header class="mc-Section_Header">
       <h1 class="mc-Section_Heading">{{ page.navname }}</h1>
     </header>
-      <ul class="mc-ListPosts">
-        {% for post in site.posts %}
-          <li class="mc-ListPosts_Item">
-            <span class="mc-ListPosts_Date"><time datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: "%b %-d, %Y" }}</time></span>
-            <h2 class="mc-Listposts_Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            <p class="mc-ListPosts_Abstract">{{ post.abstract }}</p>
-          </li>
-        {% endfor %}
-      </ul>
+    <ul class="mc-ListPosts">
+      {% for post in site.posts %}
+        <li class="mc-ListPosts_Item">
+          <span class="mc-ListPosts_Date"><time datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: "%b %-d, %Y" }}</time></span>
+          <h2 class="mc-Listposts_Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <p class="mc-ListPosts_Abstract">{{ post.abstract }}</p>
+        </li>
+      {% endfor %}
+    </ul>
   </section>
 </div><!-- layout-Content-maxWidth -->
