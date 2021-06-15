@@ -9,7 +9,7 @@
     "browser-sync": "^2.26.7",
     "html-minifier": "*",
     "onchange": "*",
-    "postcss": "^7.0.17",
+    "postcss": "^7.0.36",
     "postcss-cli": "*",
     "postcss-import": "*",
     "postcss-load-config": "^2.1.0",
