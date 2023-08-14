@@ -1,0 +1,72 @@
+[
+  {
+     "title": "Understand",
+     "step": "mc-Process_Step1",
+     "explanation": "Learn about the company, its goals and its products",
+     "substep": [
+        {
+           "title": "Interviews"
+        },
+        {
+           "title": "Competition analysis"
+        },
+        {
+           "title": "Surveys"
+        }
+     ]
+  },
+  {
+     "title": "Define",
+     "step": "mc-Process_Step2",
+     "explanation": "Achieve a common understanding with the stakeholders",
+     "substep": [
+        {
+           "title": "Present the results of research"
+        },
+        {
+           "title": "Look for unclear requisites or overlapping features"
+        },
+        {
+           "title": "Alert of low ROI requisites"
+        }
+     ]
+  },
+  {
+     "title": "Propose",
+     "step": "mc-Process_Step3",
+     "explanation": "Create a solution that aligns user needs and business goals",
+     "substep": [
+        {
+           "title": "Feature conception"
+        },
+        {
+           "title": "Workflows"
+        },
+        {
+           "title": "Copywriting"
+        },
+        {
+           "title": "Sketching/wireframing"
+        },
+        {
+           "title": "HTML+CSS prototypes (responsive, accesible, etc)"
+        }
+     ]
+  },
+  {
+     "title": "Test",
+     "step": "mc-Process_Step4",
+     "explanation": "Find out what succeeded and what went wrong",
+     "substep": [
+        {
+           "title": "Test"
+        },
+        {
+           "title": "Tweak"
+        },
+        {
+           "title": "Test"
+        }
+     ]
+  }
+]

@@ -1,39 +1,18 @@
 {
-  "name": "basic",
+  "name": "blogfolio",
   "description": "Basic npm script static site builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Marcos",
   "private": true,
   "devDependencies": {
-    "autoprefixer": "^9.6.0",
-    "browser-sync": "^2.26.7",
+    "@11ty/eleventy": "^2.0.1",
     "html-minifier": "*",
-    "onchange": "*",
-    "postcss": "^7.0.17",
-    "postcss-cli": "*",
-    "postcss-import": "*",
-    "postcss-load-config": "^2.1.0",
-    "postcss-nested": "*",
-    "postcss-scss": "*",
-    "postcss-strip-inline-comments": "*",
-    "stylelint": "^10.1.0",
+    "stylelint": "*",
     "stylelint-order": "*"
   },
-  "browserslist": [
-    "last 2 versions"
-  ],
   "scripts": {
     "clean": "rm -r _site/*",
-    "buildsite": "jekyll build",
-    "bsyncsite": "browser-sync start --server '_site' --files _site/css/*.css",
-    "build:css": "postcss styles/master.scss -o _site/css/styles.css -c postcss.config.js",
-    "minify:css": "cleancss -o _site/css/styles.css _site/css/styles.css",
-    "watch:css": "onchange 'styles/*.scss' -- npm run build:css",
-    "lint": "stylelint styles/*.scss",
-    "preserver": "npm run clean & npm run buildsite & npm run build:css",
-    "server": "npm run bsyncsite & npm run watch:css",
-    "htmlmin": "html-minifier --collapse-whitespace --remove-comments --input-dir _site --output-dir _site --file-ext html",
-    "staticserver": "python -m SimpleHTTPServer 8000",
-    "sssbuild:watch": "parallelshell 'npm run watch:js' 'npm run watch:css' 'npm run watch:html'"
+    "lint": "stylelint includes/styles/*.css",
+    "htmlmin": "html-minifier --collapse-whitespace --remove-comments --input-dir _site --output-dir _site --file-ext html"
   }
 }
