@@ -7,7 +7,7 @@ categories: blog design writing
 abstract: "My family has given me the everything; including the foundation which helped me kickstart my career."
 ---
 
-_This post is part of a series of posts thanking everyone who help (or helped) me improve my knowledge and skills on design and development._
+_This post is part of a series of posts thanking everyone who helps (or helped) me improve my knowledge and skills on design and development._
 
 ## Never underestimate luck
 

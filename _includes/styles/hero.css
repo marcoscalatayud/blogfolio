@@ -10,8 +10,9 @@
 }
 
 .mc-FollowUp {
-  font-size: var(--font-size-comfort);
-  line-height: 1.2;
   padding-block: var(--layout-spacing-8);
   margin-bottom: var(--layout-spacing-8);
+  color: var(--text-color-secondary);
+  font-size: var(--font-size-comfort);
+  line-height: 1.2;
 }

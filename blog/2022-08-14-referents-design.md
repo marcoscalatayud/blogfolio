@@ -7,7 +7,7 @@ categories: blog design writing
 abstract: "Luckily, we live in a day and age where quality information is readily available cheap and fast."
 ---
 
-_This post is part of a series of posts thanking everyone who help (or helped) me improve my knowledge and skills on design and development._
+_This post is part of a series of posts thanking everyone who helps (or helped) me improve my knowledge and skills on design and development._
 
 <!--
 As any visitor can see, I write very sparingly. There are two main reasons: I simply prefer to spend the time doing something else; I only want to write things that can endure the passing of time as gracefully as possible.
