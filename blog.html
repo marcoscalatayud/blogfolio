@@ -1,22 +1,22 @@
 ---
+eleventyImport:
+collections: ["post"]
 layout: default
 title: "Blog - Marcos Calatayud - UX designer"
 navname: Blog
 ---
 
-<div class="layout-Content-maxWidth">
-  <section class="mc-Section">
-    <header class="mc-Section_Header">
-      <h1 class="mc-Section_Heading">{{ page.navname }}</h1>
-    </header>
-    <ul class="mc-ListPosts">
-      {% for post in site.posts %}
-        <li class="mc-ListPosts_Item">
-          <span class="mc-ListPosts_Date"><time datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: "%b %-d, %Y" }}</time></span>
-          <h2 class="mc-Listposts_Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <p class="mc-ListPosts_Abstract">{{ post.abstract }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-</div><!-- layout-Content-maxWidth -->
+<section class="mc-Section">
+  <header class="mc-Section_Header">
+    <h1 class="mc-Section_Heading">{{ navname }}</h1>
+  </header>
+  <ul class="mc-ListPosts">
+    {% for post in collections.post reversed %}
+      <li class="mc-ListPosts_Item">
+        <p class="mc-ListPosts_Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.data.title }}</a></p>
+        <time class="mc-ListPosts_Date" datetime="{{ post.date | date_to_xmlschema }}"> {{ post.date | date: "%b %-d, %Y" }}</time>
+        <p class="mc-ListPosts_Abstract">{{ post.data.abstract }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

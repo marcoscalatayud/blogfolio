@@ -5,21 +5,19 @@ navname: Process
 ---
 <section class="mc-Section">
   <header class="mc-Section_Header">
-    <div class="layout-Content-maxWidth">
-      <h1 class="mc-Section_Heading">{{ page.navname }}</h1>
-    </div>
+    <h1 class="mc-Section_Heading">{{ navname }}</h1>
   </header>
   <div class="mc-Section_Body">
     <ol class="mc-Process">
-      {% for step in site.data.process %}
-        <li class="mc-Process_Step {{step.step}}">
+      {% for step in process %}
+        <li class="mc-Process_Step">
           <header class="mc-Process_Header">
             <h2 class="mc-Process_Title">{{ step.title }}</h2>
             <p class="mc-Process_Explanation"> {{ step.explanation }}</p>
           </header>
-          <ul class="mc-Process_Examples">
+          <ul>
             {% for type in step.substep %}
-              <li class="mc-Process_Example">{{ type.title }}</li>
+              <li>{{ type.title }}</li>
             {% endfor %}
           </ul>
         </li>
