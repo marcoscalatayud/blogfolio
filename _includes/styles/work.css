@@ -1,0 +1,52 @@
+.mc-ListCompanies {
+  list-style: none;
+  padding-top: 24px;
+}
+
+.mc-ListCompanies_Item {
+  padding: 0;
+}
+
+.mc-ListCompanies_Item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: var(--layout-spacing-48);
+}
+
+@media screen and (min-width: 40rem) {
+  .mc-ListCompanies_Item {
+    display: grid;
+    grid-template-columns: var(--layout-sidebar-left) auto;
+    grid-template-rows: var(--layout-spacing-48) auto;
+    grid-column-gap: var(--layout-spacing-24);
+  }
+}
+
+.mc-Company_Logo {
+  display: block;
+  width: 180px;
+  height: 64px;
+  margin-top: calc(-1 * var(--layout-spacing-24));
+}
+
+.mc-Company_Header,
+.mc-Company_Main {
+  grid-column: 2;
+}
+
+.mc-Company_Meta {
+  grid-row: 1;
+}
+
+.mc-Company_Main h3 {
+  margin-top: -26px;
+}
+
+@media screen and (min-width: 40rem) {
+  .mc-Company_Date {
+    text-align: right;
+  }
+}
+
+.mc-Company_Role {
+  color: var(--text-color-secondary);
+}

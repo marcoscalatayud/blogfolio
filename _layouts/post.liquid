@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head %}
+
+  <body>
+    <div class="layout-Content-maxWidth">
+      {% include header %}
+
+      <main class="" role="main">
+        <div class="mc-Post">
+          <header class="mc-Post_Header">
+            <h1>{{ title }}</h1>
+            <time class="mc-Post_Meta"></time>
+          </header>
+          <div class="mc-Post_Content">
+            {{ content }}
+          </div><!-- .mc-Post_Content -->
+        </div><!-- .mc-post -->
+      </main><!-- .maincontent -->
+      {% include footer_post %}
+    </div>
+  </body>
+</html>

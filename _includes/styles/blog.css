@@ -1,0 +1,52 @@
+@media (min-width: 64rem) {
+  .mc-Section {
+    margin-inline-start: -8rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .mc-Section_Heading {
+    padding-left: var(--layout-indent-left);
+  }
+}
+
+.mc-ListPosts {
+  list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .mc-ListPosts_Item {
+    display: grid;
+    align-items: baseline;
+    grid-gap: 0 var(--layout-spacing-24);
+    grid-template-columns: var(--layout-sidebar-left) 1fr;
+    margin-bottom: var(--layout-spacing-24);
+  }
+}
+
+.mc-ListPosts_Item:not(:first-child) {
+  margin-top: auto;
+}
+
+.mc-ListPosts_Date {
+  display: block;
+  color: var(--text-color-secondary);
+}
+
+@media (min-width: 40rem) {
+  .mc-ListPosts_Date {
+    order: -1;
+    display: block;
+    color: var(--text-color-secondary);
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+
+.mc-ListPosts_Title {
+  font-weight: bold;
+}
+
+.mc-ListPosts_Abstract {
+  grid-column: 2;
+}

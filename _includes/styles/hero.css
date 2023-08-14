@@ -1,0 +1,17 @@
+@media screen and (min-width: 40rem) {
+  .mc-Hero {
+    margin-bottom: var(--layout-spacing-16);
+    max-width: 32rem;
+  }
+}
+
+.mc-Proposition {
+  font-size: var(--font-size-h1);
+}
+
+.mc-FollowUp {
+  font-size: var(--font-size-comfort);
+  line-height: 1.2;
+  padding-block: var(--layout-spacing-8);
+  margin-bottom: var(--layout-spacing-8);
+}

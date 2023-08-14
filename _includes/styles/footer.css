@@ -1,0 +1,35 @@
+/* .mc-License {} */
+
+.mc-Footer_About {
+  margin: 0 auto var(--layout-spacing-24);
+  font-family: var(--font-family-sans);
+}
+
+@media screen and (min-width: 40rem) {
+  .mc-Footer_About {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-column-gap: var(--layout-spacing-16);
+  }
+}
+
+.mc-ProfilePicture {
+  overflow: hidden;
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  box-shadow: 0 5px 20px -15px;
+}
+
+@media screen and (min-width: 40rem) {
+  .mc-ProfilePicture {
+    grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  .mc-Footer_Text {
+    grid-column: 2;
+  }
+}

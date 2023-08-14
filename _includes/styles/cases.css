@@ -1,0 +1,77 @@
+.cst-LayoutArea li li {
+  padding: var(--layout-spacing-8) 0 var(--layout-spacing-16);
+}
+
+.cst-LayoutArea li ul {
+  margin-top: -8px;
+  margin-bottom: 8px;
+  margin-left: var(--layout-spacing-16);
+}
+
+.cst-LayoutArea {
+  padding-right: var(--layout-spacing-24);
+  padding-left: var(--layout-spacing-24);
+}
+
+.cst-LayoutArea-hero {
+  padding-top: 240px;
+  padding-bottom: var(--layout-spacing-24);
+  margin-bottom: var(--layout-spacing-24);
+  background-color: var(--color-educapoker);
+}
+
+.cst-LayoutArea_Content {
+  max-width: var(--layout-max-width);
+  padding: 0 var(--layout-spacing-24);
+  margin: auto;
+}
+
+.cst-HeaderHero {
+  color: var(--color-white);
+}
+
+/* Easy replace */
+.cst-Title {
+  font-family: var(--font-family-serif);
+}
+
+.cst-Description {
+  display: block;
+  font-size: var(--font-size-h3);
+}
+
+.cst-Case_GridWrapper {
+  max-width: 100vw;
+  padding-left: var(--layout-spacing-24);
+}
+
+@media screen and (max-width: 40rem) {
+  .cst-Case_GridWrapper {
+    padding-right: var(--layout-spacing-24);
+  }
+}
+
+.cst-Case_Grid {
+  padding: var(--layout-spacing-24) 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 40rem) {
+  .cst-Case_Grid {
+    display: grid;
+    grid-template-columns: auto 30rem minmax(auto, 50%);
+    grid-gap: var(--layout-spacing-24);
+  }
+}
+
+.cst-Case_Content {
+  grid-column: 2 / 3;
+}
+
+.cst-Case_Aside {
+  grid-column: 3 / 4;
+}
+
+.cst-FollowUp {
+  color: var(--text-color-secondary);
+}

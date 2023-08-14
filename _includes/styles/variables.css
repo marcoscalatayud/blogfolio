@@ -1,0 +1,38 @@
+:root {
+  --color-white: hsla(0, 100%, 100%, 1);
+  --color-gray-lightest: hsla(50, 100%, 99%, 1);
+  --color-gray-lightest: #d0ccc7;
+  --color-gray-lightest: #fed;
+  --color-gray-light: #bbb;
+  --color-gray-medium: #444;
+  --color-gray-medium: #40484a;
+  --color-gray-medium: #543;
+  --color-gray-darkest: #321;
+  --color-red: #bc2f2f;
+  --color-blue: #317ab1;
+  --color-blue: #20508a;
+  --color-educapoker: #3f7eca;
+
+  --color-background-primary: var(--color-gray-lightest);
+  --color-link: var(--color-blue);
+  --text-color-primary: var(--color-gray-darkest);
+  --text-color-secondary: var(--color-gray-medium);
+  --border-color-primary: var(--color-gray-light);
+
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 1.75rem;
+  --font-size-h3: 1.5rem;
+  --font-size-comfort: 1.25rem;
+  --font-size-base: 1rem;
+  --font-size-small: .8rem;
+  --layout-spacing-8: .5rem;
+  --layout-spacing-16: 1rem;
+  --layout-spacing-24: 1.5rem;
+  --layout-spacing-32: 2rem;
+  --layout-spacing-48: 3rem;
+
+  --layout-sidebar-left: 6.5rem;
+  --layout-indent-left: 8rem;
+  --layout-breakpoint: 40rem;
+  --layout-max-width: 48rem;
+}

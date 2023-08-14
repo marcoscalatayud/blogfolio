@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Marcos Calatayud - UX designer"
+navname: Home
+---
+<div class="mc-Hero">
+  <h1 class="mc-Proposition">I design digital products that meet user needs &amp; business goals.</h1>
+  <p class="mc-FollowUp">From early product definition to feedback analysis; including feature conception, workflow design, labelling and production class HTML+CSS prototypes.</p>
+
+  <ul>
+    {%- for link in hero -%}
+      <li>
+        <span class="mc-AboutList_Description">{{ link.description }}</span>
+        <a href="{{ link.link }}">{{ link.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

@@ -1,0 +1,28 @@
+@media screen and (max-width: 40rem) {
+  .mc-MainNavigation {
+    margin-top: calc(-1 * var(--layout-spacing-8));
+  }
+}
+
+.mc-Menu {
+  display: flex;
+  list-style: none;
+  margin-top: var(--layout-spacing-24);
+}
+
+.mc-Menu_Item:not(:first-child) {
+  margin-top: 0;
+  margin-left: var(--layout-spacing-24);
+}
+
+[class^="mc-Menu_Link"] {
+  padding-block-start: var(--layout-spacing-8);
+  display: block;
+  font-family: var(--font-family-sans);
+  text-decoration: none;
+}
+
+.mc-Menu_Link-active {
+  padding-bottom: .75rem;
+  border-bottom: .25rem solid;
+}

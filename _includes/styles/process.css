@@ -1,0 +1,51 @@
+.mc-Process {
+  list-style: none;
+  counter-reset: counter;
+}
+
+.mc-Process_Step {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  padding: 0 0 var(--layout-spacing-48);
+}
+
+@media (min-width: 40rem) {
+  .mc-Process_Step {
+    grid-template-columns: var(--layout-indent-left) auto;
+  }
+}
+
+.mc-Process_Step::before {
+  counter-increment: counter;
+  content: counter(counter);
+  display: block;
+  position: relative;
+  top: var(--layout-spacing-24);
+  left: var(--layout-spacing-16);
+  width: var(--layout-spacing-32);
+  height: var(--layout-spacing-32);
+  border-radius: 100%;
+  background: var(--text-color-primary);
+  color: var(--color-background-primary);
+  font-size: var(--font-size-small);
+  line-height: var(--layout-spacing-32);
+  text-align: center;
+  transform: scale(2);
+}
+
+
+@media (min-width: 40rem) {
+  .mc-Process_Step::before {
+    left: 4rem;
+  }
+}
+
+/*
+.mc-Process_Header {}
+.mc-Process_Title {}
+.mc-Process_Explanation {}
+*/
+
+.mc-Process_Step ul {
+  grid-column: 2;
+}
