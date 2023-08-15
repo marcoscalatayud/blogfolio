@@ -28,6 +28,20 @@
   margin-top: calc(-1 * var(--layout-spacing-24));
 }
 
+.mc-Company_Logo-inverted {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mc-Company_Logo-inverted {
+    display: block;
+  }
+
+  .mc-Company_Logo-inverted + img {
+    display: none;
+  }
+}
+
 .mc-Company_Header,
 .mc-Company_Main {
   grid-column: 2;
