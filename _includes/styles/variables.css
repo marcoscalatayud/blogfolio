@@ -11,9 +11,9 @@
 
   --color-educapoker: #3f7eca;
 
-  --font-size-h1: 2.5rem;
-  --font-size-h2: 1.75rem;
-  --font-size-h3: 1.5rem;
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
   --font-size-comfort: 1.25rem;
   --font-size-base: 1rem;
   --font-size-small: .8rem;
@@ -41,5 +41,16 @@
     --text-color-primary: var(--color-orange-lightest);
     --text-color-secondary: var(--color-orange-lighter);
     --color-link: var(--color-orange-light);
+  }
+}
+
+@media (min-width: 40rem) {
+  :root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 1.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-comfort: 1.25rem;
+    --font-size-base: 1rem;
+    --font-size-small: .8rem;
   }
 }
