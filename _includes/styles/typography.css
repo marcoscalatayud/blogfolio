@@ -37,9 +37,15 @@ body {
 }
 
 h1 {
-  padding-block: .75rem;
-  font-size: var(--font-size-h1);
-  line-height: 3rem;
+  line-height: 1.2;
+}
+
+@media (min-width: 40rem) {
+  h1 {
+    padding-block: .75rem;
+    font-size: var(--font-size-h1);
+    line-height: 3rem;
+  }
 }
 
 h2 {
@@ -93,6 +99,10 @@ ul {
 
 ul:not([class]) {
   list-style-type: disc;
+}
+
+ul:not([class]):not(:last-child) {
+  margin-block-end: var(--layout-spacing-24);
 }
 
 blockquote::before {

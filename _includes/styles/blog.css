@@ -48,5 +48,13 @@
 }
 
 .mc-ListPosts_Abstract {
-  grid-column: 2;
+  margin-bottom: var(--layout-spacing-24);
+}
+
+@media (min-width: 768px) {
+  .mc-ListPosts_Abstract {
+    grid-column: 2;
+    margin-top: calc(var(--layout-spacing-24) * -1);
+    margin-bottom: 0;
+  }
 }

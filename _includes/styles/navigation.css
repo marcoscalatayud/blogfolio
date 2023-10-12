@@ -7,7 +7,12 @@
 .mc-Menu {
   display: flex;
   list-style: none;
-  margin-top: var(--layout-spacing-24);
+}
+
+@media (min-width: 768px) {
+  .mc-Menu {
+    margin-top: var(--layout-spacing-24);
+  }
 }
 
 .mc-Menu_Item:not(:first-child) {
