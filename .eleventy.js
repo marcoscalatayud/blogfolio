@@ -4,7 +4,9 @@ module.exports = function(eleventyConfig) {
     dynamicPartials: false,
     strictFilters: false, // renamed from `strict_filters` in Eleventy 1.0
   });
-
+  eleventyConfig.setServerOptions({
+    showAllHosts: true,
+  });
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   return {
