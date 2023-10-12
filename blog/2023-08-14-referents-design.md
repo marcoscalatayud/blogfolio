@@ -15,7 +15,9 @@ As any visitor can see, I write very sparingly. There are two main reasons: I si
 
 Luckily, we live in a day and age where quality information is readily available cheap and fast. You have many options to learn from the best: reading articles, books, watching videos, tutorials, examples...
 
-Here you have a list of the people who unknowingly have helped me shape my perspective on product design. Here you have a list of *my teachers*.
+Here you have a list of the people who unknowingly have helped me shape my perspective on product design. Here you have a list of *my design teachers*.
+
+You can also check my [frontend referents](/blog/2022-08-20-referents-frontend).
 
 ### Edward Tufte
 
