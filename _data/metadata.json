@@ -3,7 +3,9 @@
 	"language": "en",
   "url": "https://marcos-calatayud.com",
   "author": {
-    "name": "Marcos Calatayud"
+    "name": "Marcos Calatayud",
+    "linkedin": "//www.linkedin.com/in/marcoscalatayud",
+    "twitter": "//twitter.com/marcoscalatayud"
   },
   "feed": {
     "subtitle": "My thoughts about design and development.",
