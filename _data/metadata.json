@@ -1,0 +1,15 @@
+{
+  "title": "Marcos Calatayud - UX designer",
+	"language": "en",
+  "url": "https://marcos-calatayud.com",
+  "author": {
+    "name": "Marcos Calatayud"
+  },
+  "feed": {
+    "subtitle": "My thoughts about design and development.",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "url": "https://marcos-calatayud.com/feed.xml",
+    "id": "https://marcos-calatayud.com/"
+  }
+}

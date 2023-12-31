@@ -1,4 +1,12 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addLiquidFilter("dateToRfc822", pluginRss.dateToRfc822);
+  eleventyConfig.addPlugin(pluginRss, {
+    posthtmlRenderOptions: {
+      closingSingleTag: "default" // opt-out of <img/>-style XHTML single tags
+    }
+  });
   eleventyConfig.addPassthroughCopy("bundle.css");
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
