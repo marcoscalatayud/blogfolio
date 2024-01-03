@@ -1,4 +1,7 @@
-/* .mc-Post {} */
+.mc-Post,
+.mc-Footer_About {
+  font-size: var(--font-size-comfort);
+}
 
 /* .mc-Post_Header {} */
 
