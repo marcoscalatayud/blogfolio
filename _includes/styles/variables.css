@@ -31,19 +31,15 @@
   --text-color-primary: var(--color-blue-darkest);
   --text-color-secondary: var(--color-blue-darker);
   --color-link: var(--color-blue-dark);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  @media (prefers-color-scheme: dark) {
     --color-background-primary: var(--color-blue-darkest);
     --text-color-primary: var(--color-orange-lightest);
     --text-color-secondary: var(--color-orange-lighter);
     --color-link: var(--color-orange-light);
   }
-}
 
-@media (width >= 40rem) {
-  :root {
+  @media (width >= 40rem) {
     --font-size-h1: 2.5rem;
     --font-size-h2: 1.75rem;
     --font-size-h3: 1.5rem;

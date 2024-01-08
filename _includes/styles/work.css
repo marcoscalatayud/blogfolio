@@ -5,20 +5,18 @@
 
 .mc-ListCompanies_Item {
   padding: 0;
-}
 
-.mc-ListCompanies_Item:not(:last-child) {
-  margin-top: 0;
-  margin-bottom: var(--layout-spacing-48);
-}
-
-@media screen and (min-width: 40rem) {
-  .mc-ListCompanies_Item {
+  @media screen and (min-width: 40rem) {
     display: grid;
     grid-template-columns: var(--layout-sidebar-left) auto;
     grid-template-rows: var(--layout-spacing-48) auto;
     grid-column-gap: var(--layout-spacing-24);
   }
+}
+
+.mc-ListCompanies_Item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: var(--layout-spacing-48);
 }
 
 .mc-Company_Logo {
@@ -51,16 +49,17 @@
   grid-row: 1;
 }
 
-.mc-Company_Main h3 {
-  margin-top: -26px;
+.mc-Company_Main h4 {
+  margin-block: 0 calc(var(--layout-spacing-16) * -1);
 }
 
-@media screen and (min-width: 40rem) {
-  .mc-Company_Date {
+.mc-Company_Date {
+  @media screen and (min-width: 40rem) {
     text-align: right;
   }
 }
 
 .mc-Company_Role {
+  margin-block: calc(var(--layout-spacing-16) * -1);
   color: var(--text-color-secondary);
 }

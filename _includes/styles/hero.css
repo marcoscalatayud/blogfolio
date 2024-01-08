@@ -1,5 +1,5 @@
-@media screen and (min-width: 40rem) {
-  .mc-Hero {
+.mc-Hero {
+  @media screen and (width >= 40rem) {
     margin-bottom: var(--layout-spacing-16);
     max-width: 32rem;
   }

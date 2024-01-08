@@ -7,13 +7,12 @@
   display: grid;
   grid-template-columns: 5rem auto;
   padding: 0 0 var(--layout-spacing-48);
-}
 
-@media (width >= 40rem) {
-  .mc-Process_Step {
+  @media (width >= 40rem) {
     grid-template-columns: var(--layout-indent-left) auto;
   }
 }
+
 
 .mc-Process_Step::before {
   counter-increment: counter;
@@ -31,11 +30,8 @@
   line-height: var(--layout-spacing-32);
   text-align: center;
   transform: scale(2);
-}
 
-
-@media (width >= 40rem) {
-  .mc-Process_Step::before {
+  @media (width >= 40rem) {
     left: 4rem;
   }
 }

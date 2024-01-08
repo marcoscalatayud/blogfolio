@@ -26,20 +26,16 @@ body.debug {
 
 .layout-MainHeader {
   padding: var(--layout-spacing-8) 0 var(--layout-spacing-24);
-}
 
-@media (width >= 768px) {
-  .layout-MainHeader {
+  @media (width >= 768px) {
     padding: var(--layout-spacing-24) 0;
   }
 }
 
 .layout-MainHeader_Content {
   margin: auto;
-}
 
-@media screen and (min-width: 40rem) {
-  .layout-MainHeader_Content {
+  @media screen and (width >= 40rem) {
     display: flex;
   }
 }
@@ -48,17 +44,16 @@ body.debug {
   max-width: var(--layout-max-width);
   padding-inline: var(--layout-spacing-24);
   margin: auto;
-}
 
-.layout-MainFooter {
-  padding-block: var(--layout-spacing-48);
-  margin: 0 auto var(--layout-spacing-24);
-}
-
-@media (width >= 40rem) {
-  .layout-Content-maxWidth {
+  @media (width >= 40rem) {
     max-width: var(--layout-max-width);
     padding-inline: var(--layout-spacing-24);
     margin: auto;
   }
+}
+
+
+.layout-MainFooter {
+  padding-block: var(--layout-spacing-48);
+  margin: 0 auto var(--layout-spacing-24);
 }

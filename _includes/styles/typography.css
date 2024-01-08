@@ -15,10 +15,7 @@ body {
 
 h1 {
   line-height: 1.2;
-}
-
-@media (width >= 40rem) {
-  h1 {
+  @media (width >= 40rem) {
     padding-block: .75rem;
     font-size: var(--font-size-h1);
     line-height: 3rem;
