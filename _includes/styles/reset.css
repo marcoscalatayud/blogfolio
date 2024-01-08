@@ -14,7 +14,7 @@ img {
   display: block;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (width < 40rem) {
   img {
     max-width: 100%;
     height: auto;

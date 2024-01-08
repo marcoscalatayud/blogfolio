@@ -9,7 +9,7 @@
   padding: 0 0 var(--layout-spacing-48);
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .mc-Process_Step {
     grid-template-columns: var(--layout-indent-left) auto;
   }
@@ -34,7 +34,7 @@
 }
 
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .mc-Process_Step::before {
     left: 4rem;
   }

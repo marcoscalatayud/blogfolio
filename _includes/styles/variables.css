@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   :root {
     --font-size-h1: 2.5rem;
     --font-size-h2: 1.75rem;

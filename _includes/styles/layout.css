@@ -28,7 +28,7 @@ body.debug {
   padding: var(--layout-spacing-8) 0 var(--layout-spacing-24);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .layout-MainHeader {
     padding: var(--layout-spacing-24) 0;
   }
@@ -55,7 +55,7 @@ body.debug {
   margin: 0 auto var(--layout-spacing-24);
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .layout-Content-maxWidth {
     max-width: var(--layout-max-width);
     padding-inline: var(--layout-spacing-24);

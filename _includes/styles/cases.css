@@ -45,7 +45,7 @@
   padding-left: var(--layout-spacing-24);
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (width < 40rem) {
   .cst-Case_GridWrapper {
     padding-right: var(--layout-spacing-24);
   }

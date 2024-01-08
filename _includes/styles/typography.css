@@ -40,7 +40,7 @@ h1 {
   line-height: 1.2;
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   h1 {
     padding-block: .75rem;
     font-size: var(--font-size-h1);

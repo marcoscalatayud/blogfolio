@@ -1,4 +1,4 @@
-@media screen and (max-width: 40rem) {
+@media screen and (width < 40rem) {
   .mc-MainNavigation {
     margin-top: calc(-1 * var(--layout-spacing-8));
   }
@@ -9,7 +9,7 @@
   list-style: none;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .mc-Menu {
     margin-top: var(--layout-spacing-24);
   }
