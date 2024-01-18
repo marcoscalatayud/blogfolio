@@ -26,9 +26,9 @@ But I ended up ditching it since the industry has been adopting more common stan
 
 ## Swithed from jekyll to 11ty
 
-I have used my personal site as a [Learn In Progress](//blog/2015-02-01-reasons-to-build-your-own-blog/). And I have been changing how I built it.
+I have used my personal site as a [Learn In Progress](/blog/2015-02-01-reasons-to-build-your-own-blog/). And I have been changing how I built it.
 
-- A "static" PHP site. Where I just used the `include()` PHP feature to help me code as [DRY](en.wikipedia.org/wiki/Don%27t_repeat_yourself) as possible.
+- A "static" PHP site. Where I just used the `include()` PHP feature to help me code as [DRY](//en.wikipedia.org/wiki/Don%27t_repeat_yourself) as possible.
 - A WordPress install (a classic step, mind you). I played around with different skeleton themes to build upon them.
 - A [middleman](//middlemanapp.com) site, once I started to feel that **WordPress was too much for my needs**, since it got richer in features I just didn't need.
 - A [jekyll](//jekyllrb.com) site. I took that step because it was more focused on blogging.

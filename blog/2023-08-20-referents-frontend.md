@@ -17,7 +17,7 @@ Luckily, we live in a day and age where quality information is readily available
 
 Here you have a list of the people who unknowingly have helped me shape my perspective on frontend coding. Here you have a list of *my frontend teachers*.
 
-You can also check my [design referents](/blog/2022-08-14-referents-design).
+You can also check my [design referents](/blog/2023-08-14-referents-design).
 
 ### Eric Meyer
 
@@ -55,7 +55,7 @@ I think I discovered him when looking for help on static frontend development an
 
 <p class="mc-Post_Meta">Web standards</p>
 
-Zeldman was a referent for the web industry early on, specially pushing for the use of we standards. But I knew him through one of his projects, [A list apart](//www.alistapart.com/) &emdash; one of the best sites to learn about design and development in any of its subareas.
+Zeldman was a referent for the web industry early on, specially pushing for the use of we standards. But I knew him through one of his projects, [A list apart](//www.alistapart.com/) &mdash; one of the best sites to learn about design and development in any of its subareas.
 
 ### Chris Coyier
 

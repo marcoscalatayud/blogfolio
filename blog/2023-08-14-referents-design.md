@@ -17,7 +17,7 @@ Luckily, we live in a day and age where quality information is readily available
 
 Here you have a list of the people who unknowingly have helped me shape my perspective on product design. Here you have a list of *my design teachers*.
 
-You can also check my [frontend referents](/blog/2022-08-20-referents-frontend).
+You can also check my [frontend referents](/blog/2023-08-20-referents-frontend).
 
 ### Edward Tufte
 
@@ -35,7 +35,7 @@ Even though he is not kneen on the term, he's considered the pioneer on User eXp
 
 <p class="mc-Post_Meta">Design, usability, minimalism</p>
 
-His book [The laws of simplicity](https://lawsofsimplicity.com) is a very coherent work (is actually a really short easy-to-read but powerful book) which can be used as a heuristic –others would call it "cheat sheet", or check list- to analyze the usability of your digital product.
+His book [The laws of simplicity](//lawsofsimplicity.com) is a very coherent work (is actually a really short easy-to-read but powerful book) which can be used as a heuristic –others would call it "cheat sheet", or check list- to analyze the usability of your digital product.
 
 ### Steve Krug
 
