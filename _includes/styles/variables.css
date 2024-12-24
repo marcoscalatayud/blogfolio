@@ -1,13 +1,17 @@
 :root {
-  --color-blue-dark: hsl(210, 100%, 25%);
-  --color-blue-darker: hsl(210, 50%, 25%);
-  --color-blue-darkest: hsl(210, 50%, 10%);
+  color-scheme: light dark;
 
-  --color-orange-lightest: hsl(30, 10%, 85%);
-  --color-orange-lighter: hsl(30, 20%, 70%);
-  --color-orange-light: hsl(30, 100%, 70%);
+  --color-gray: oklch(45% 0.0315 250);
+
+  --color-blue-dark: oklch(37.5% 0.122 250);
+  --color-blue-darkest: oklch(21.1% 0.0310 250);
+
+  --color-orange-lightest: oklch(88.5% 0.0065 67.5);
+  --color-orange-lighter: oklch(77.5% 0.0275 67.5);
+  --color-orange-light: oklch(82% 0.128 67.5);
 
   --color-educapoker: #3f7eca;
+  --color-qatium: #7d44ff;
 
   --font-size-h1: 2rem;
   --font-size-h2: 1.5rem;
@@ -27,17 +31,28 @@
   --layout-breakpoint: 40rem;
   --layout-max-width: 48rem;
 
-  --color-background-primary: var(--color-orange-lightest);
-  --text-color-primary: var(--color-blue-darkest);
-  --text-color-secondary: var(--color-blue-darker);
-  --color-link: var(--color-blue-dark);
+  /* Tokenized palette */
 
-  @media (prefers-color-scheme: dark) {
-    --color-background-primary: var(--color-blue-darkest);
-    --text-color-primary: var(--color-orange-lightest);
-    --text-color-secondary: var(--color-orange-lighter);
-    --color-link: var(--color-orange-light);
-  }
+  --color-background-primary:
+    light-dark(
+      var(--color-orange-lightest),
+      var(--color-blue-darkest)
+  );
+  --text-color-primary:
+    light-dark(
+      var(--color-blue-darkest),
+      var(--color-orange-lightest)
+  );
+  --text-color-secondary:
+    light-dark(
+      var(--color-gray),
+      var(--color-orange-lighter)
+  );
+  --color-link:
+    light-dark(
+      var(--color-blue-dark),
+      var(--color-orange-light)
+  );
 
   @media (width >= 40rem) {
     --font-size-h1: 2.5rem;
