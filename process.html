@@ -15,9 +15,9 @@ navname: Process
             <h2 class="mc-Process_Title">{{ step.title }}</h2>
             <p class="mc-Process_Explanation"> {{ step.explanation }}</p>
           </header>
-          <ul>
+          <ul class="mc-Process_List">
             {% for type in step.substep %}
-              <li>{{ type.title }}</li>
+              <li class="mc-Process_Item">{{ type.title }}</li>
             {% endfor %}
           </ul>
         </li>
