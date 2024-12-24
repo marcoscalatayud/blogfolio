@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setServerOptions({
     showAllHosts: true,
   });
+  eleventyConfig.setFreezeReservedData(false);
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   return {

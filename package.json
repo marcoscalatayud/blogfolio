@@ -5,15 +5,13 @@
   "author": "Marcos",
   "private": true,
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "html-minifier": "*",
+    "@11ty/eleventy": "*",
+    "@11ty/eleventy-plugin-rss": "*",
     "stylelint": "*",
     "stylelint-order": "*"
   },
   "scripts": {
-    "clean": "rm -r _site/*",
-    "lint": "stylelint includes/styles/*.css",
+    "lint": "stylelint _site/bundle.css",
     "htmlmin": "html-minifier --collapse-whitespace --remove-comments --input-dir _site --output-dir _site --file-ext html"
   }
 }
