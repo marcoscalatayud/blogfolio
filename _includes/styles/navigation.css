@@ -6,9 +6,8 @@
 
 .mc-Menu {
   display: flex;
-  list-style: none;
 
-  @media (width >= 768px) {
+  @media (width >= 40rem) {
     margin-top: var(--layout-spacing-24);
   }
 }

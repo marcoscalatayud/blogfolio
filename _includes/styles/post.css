@@ -3,7 +3,9 @@
   font-size: var(--font-size-comfort);
 }
 
-/* .mc-Post_Header {} */
+.mc-Post_Header {
+  margin-block-end: var(--layout-spacing-48);
+}
 
 .mc-Post_Meta {
   color: var(--text-color-secondary);

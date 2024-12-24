@@ -10,17 +10,13 @@
   }
 }
 
-.mc-ListPosts {
-  list-style: none;
-}
-
 .mc-ListPosts_Item {
   @media (width >= 40rem) {
     display: grid;
     align-items: baseline;
-    grid-gap: 0 var(--layout-spacing-24);
+    grid-gap: 0 var(--layout-spacing-16);
     grid-template-columns: var(--layout-sidebar-left) 1fr;
-    margin-bottom: var(--layout-spacing-24);
+    margin-bottom: var(--layout-spacing-8);
   }
 }
 
@@ -42,14 +38,14 @@
 }
 
 .mc-ListPosts_Title {
+  padding-bottom: 0;
   font-weight: bold;
 }
 
 .mc-ListPosts_Abstract {
   margin-bottom: var(--layout-spacing-24);
-  @media (width >= 768px) {
+
+  @media (width >= 40rem) {
     grid-column: 2;
-    margin-top: calc(var(--layout-spacing-24) * -1);
-    margin-bottom: 0;
   }
 }

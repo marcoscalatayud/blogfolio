@@ -27,7 +27,7 @@ body.debug {
 .layout-MainHeader {
   padding: var(--layout-spacing-8) 0 var(--layout-spacing-24);
 
-  @media (width >= 768px) {
+  @media (width >= 40rem) {
     padding: var(--layout-spacing-24) 0;
   }
 }
@@ -56,4 +56,21 @@ body.debug {
 .layout-MainFooter {
   padding-block: var(--layout-spacing-48);
   margin: 0 auto var(--layout-spacing-24);
+}
+
+
+.layout-Grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(40rem, 48rem) 1fr;
+  gap: var(--layout-spacing-16);
+  padding-inline: var(--layout-spacing-16);
+}
+
+.layout-FullWidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }

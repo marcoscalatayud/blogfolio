@@ -1,12 +1,11 @@
 .mc-Process {
-  list-style: none;
   counter-reset: counter;
 }
 
 .mc-Process_Step {
   display: grid;
   grid-template-columns: 5rem auto;
-  padding: 0 0 var(--layout-spacing-48);
+  margin: 0 0 var(--layout-spacing-48);
 
   @media (width >= 40rem) {
     grid-template-columns: var(--layout-indent-left) auto;
@@ -36,12 +35,12 @@
   }
 }
 
-/*
-.mc-Process_Header {}
-.mc-Process_Title {}
-.mc-Process_Explanation {}
-*/
+.mc-Process_Explanation {
+  margin-block-start: calc(var(--layout-spacing-24) * -1);
+  color: var(--text-color-secondary);
+}
 
-.mc-Process_Step ul {
+.mc-Process_List {
+  list-style-type: disc;
   grid-column: 2;
 }

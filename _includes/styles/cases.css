@@ -1,7 +1,3 @@
-.cst-LayoutArea li li {
-  padding: var(--layout-spacing-8) 0 var(--layout-spacing-16);
-}
-
 .cst-LayoutArea li ul {
   margin-top: -8px;
   margin-bottom: 8px;
@@ -13,11 +9,18 @@
   padding-left: var(--layout-spacing-24);
 }
 
-.cst-LayoutArea-hero {
+[class*="cst-LayoutArea-hero"] {
   padding-top: 240px;
   padding-bottom: var(--layout-spacing-24);
   margin-bottom: var(--layout-spacing-24);
+}
+
+.cst-LayoutArea-hero-educapoker {
   background-color: var(--color-educapoker);
+}
+
+.cst-LayoutArea-hero-qatium {
+  background-color: var(--color-qatium);
 }
 
 .cst-LayoutArea_Content {
@@ -53,7 +56,7 @@
   @media screen and (min-width: 40rem) {
     display: grid;
     grid-template-columns: auto 30rem minmax(auto, 50%);
-    grid-gap: var(--layout-spacing-24);
+    grid-gap: var(--layout-spacing-48);
   }
 }
 
@@ -67,4 +70,33 @@
 
 .cst-FollowUp {
   color: var(--text-color-secondary);
+}
+
+.cst-LayoutArea :where(h2, h3, h4) {
+  color: color-mix(in srgb, var(--text-color-primary) 70%, var(--color-background-primary));
+}
+
+/**/
+
+.cst-ScreenshotComparison {
+  display: grid;
+  gap: var(--layout-spacing-24);
+  margin-block-end: var(--layout-spacing-24);
+
+  @media (width > 40rem) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cst-ScreenshotComparison img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cst-ScreenshotComparison figure:first-child img {
+  margin-inline-start: auto;
+}
+
+.cst-ScreenshotComparison figure:first-child figcaption {
+  text-align: right;
 }

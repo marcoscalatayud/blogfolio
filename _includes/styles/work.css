@@ -1,5 +1,4 @@
 .mc-ListCompanies {
-  list-style: none;
   padding-top: 24px;
 }
 
@@ -10,7 +9,7 @@
     display: grid;
     grid-template-columns: var(--layout-sidebar-left) auto;
     grid-template-rows: var(--layout-spacing-48) auto;
-    grid-column-gap: var(--layout-spacing-24);
+    grid-column-gap: var(--layout-spacing-16);
   }
 }
 
@@ -54,6 +53,8 @@
 }
 
 .mc-Company_Date {
+  padding-block-start: 0;
+
   @media screen and (min-width: 40rem) {
     text-align: right;
   }
