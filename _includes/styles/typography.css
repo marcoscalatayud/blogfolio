@@ -1,7 +1,5 @@
 :root {
   --font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-  /* --font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; */
-
 }
 
 html {
@@ -11,10 +9,15 @@ html {
 
 body {
   line-height: 1.5;
+
+  @media (min-width: 40rem) {
+    font-size: var(--font-size-comfort);
+  }
 }
 
 h1 {
   line-height: 1.2;
+
   @media (width >= 40rem) {
     padding-block: .75rem;
     font-size: var(--font-size-h1);
@@ -23,10 +26,14 @@ h1 {
 }
 
 h2 {
-  padding-top: var(--layout-spacing-24);
+
   padding-bottom: var(--layout-spacing-16);
   font-size: var(--font-size-h2);
   line-height: 2rem;
+}
+
+h2:not(:first-child) {
+  padding-top: var(--layout-spacing-24);
 }
 
 h3 {
@@ -35,8 +42,16 @@ h3 {
   line-height: 2rem;
 }
 
-h3:not(:first-child) {
+p + :where(h2, h3, h4) {
   padding-top: 24px;
+}
+
+:where(h3, h4) + p {
+  margin-block-start: -1.5rem;
+}
+
+:where(h3, h4) + ul {
+  margin-block-start: -1.5rem;
 }
 
 h4,
@@ -44,6 +59,10 @@ p {
   padding-top: var(--layout-spacing-8);
   padding-bottom: var(--layout-spacing-16);
   line-height: 1.5;
+}
+
+p + h4 {
+  margin-block-start: var(--layout-spacing-24);
 }
 
 li:not([class]) {
@@ -62,12 +81,28 @@ ul {
   margin-bottom: 0;
 }
 
+:where(ul[class]) {
+  list-style: none;
+}
+
 ul:not([class]) {
   list-style-type: disc;
 }
 
 ul:not([class]):not(:last-child) {
   margin-block-end: var(--layout-spacing-24);
+}
+
+:where(ul, ol) + h2 {
+  margin-block-start: var(--layout-spacing-48);
+}
+
+:where(ul, ol) + p {
+  margin-block-start: var(--layout-spacing-24);
+}
+
+ul ul {
+  padding-inline-start: var(--layout-spacing-24);
 }
 
 blockquote::before {
@@ -81,4 +116,23 @@ blockquote::before {
 
 time {
   color: var(--text-color-secondary);
+}
+
+code {
+  color: var(--text-color-secondary);
+  font-size-adjust: .5;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figure img {
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+b,
+strong {
+  font-weight: 900;
 }
