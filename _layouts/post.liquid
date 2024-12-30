@@ -10,7 +10,9 @@
         <div class="mc-Post">
           <header class="mc-Post_Header">
             <h1>{{ title }}</h1>
-            <time class="mc-Post_Meta">{{ date | date: "%b %-d, %Y" }}</time>
+            <p>
+              <time class="mc-Post_Meta "datetime="{{ date | date_to_xmlschema }}">{{ date | postDate }}</time>
+            </p>
           </header>
           <div class="mc-Post_Content">
             {{ content }}

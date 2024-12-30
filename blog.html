@@ -14,7 +14,9 @@ navname: Blog
     {% for post in collections.post reversed %}
       <li class="mc-ListPosts_Item">
         <p class="mc-ListPosts_Title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.data.title }}</a></p>
-        <time class="mc-ListPosts_Date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <p>
+          <time class="mc-Post_Meta "datetime="{{ date | date_to_xmlschema }}">{{ post.date | postDate }}</time>
+        </p>
         <p class="mc-ListPosts_Abstract">{{ post.data.abstract }}</p>
       </li>
     {% endfor %}
