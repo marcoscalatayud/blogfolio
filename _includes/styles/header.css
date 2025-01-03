@@ -1,5 +1,6 @@
 .mc-Header {
-  margin-right: auto;
+  padding: 0;
+  margin-inline-end: auto;
 }
 
 .mc-Name {

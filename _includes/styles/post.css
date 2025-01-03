@@ -1,12 +1,11 @@
-.mc-Post,
-.mc-Footer_About {
-  font-size: var(--font-size-comfort);
-}
-
 .mc-Post_Header {
-  margin-block-end: var(--layout-spacing-48);
+  margin-block-end: var(--layout-spacing-32);
 }
 
 .mc-Post_Meta {
   color: var(--text-color-secondary);
+}
+
+small p:not(:last-child) {
+  margin-block-end: calc(var(--layout-spacing-32) * -1);
 }

@@ -1,6 +1,6 @@
 .mc-MainNavigation {
   @media screen and (width < 40rem) {
-    margin-top: calc(-1 * var(--layout-spacing-8));
+    margin-block-start: calc(var(--layout-spacing-8) * -1);
   }
 }
 
@@ -8,23 +8,24 @@
   display: flex;
 
   @media (width >= 40rem) {
-    margin-top: var(--layout-spacing-24);
+    margin-block-start: var(--layout-spacing-24);
   }
 }
 
 .mc-Menu_Item:not(:first-child) {
-  margin-top: 0;
-  margin-left: var(--layout-spacing-24);
+  margin-block-start: 0;
+  margin-inline-start: var(--layout-spacing-24);
 }
 
 [class^="mc-Menu_Link"] {
-  padding-block-start: var(--layout-spacing-8);
   display: block;
+  padding-block-start: var(--layout-spacing-8);
   font-family: var(--font-family-sans);
   text-decoration: none;
 }
 
 .mc-Menu_Link-active {
-  padding-bottom: .75rem;
-  border-bottom: .25rem solid;
+  padding-block-end: .75rem;
+  border-block-end: .25rem solid;
+  margin-block-end: calc(var(--layout-spacing-16) * -1);
 }

@@ -1,28 +1,16 @@
-.mc-ListCompanies {
-  padding-top: 24px;
-}
+/*
+.mc-ListCompanies_List {}
+*/
 
 .mc-ListCompanies_Item {
-  padding: 0;
-
-  @media screen and (min-width: 40rem) {
-    display: grid;
-    grid-template-columns: var(--layout-sidebar-left) auto;
-    grid-template-rows: var(--layout-spacing-48) auto;
-    grid-column-gap: var(--layout-spacing-16);
-  }
-}
-
-.mc-ListCompanies_Item:not(:last-child) {
-  margin-top: 0;
-  margin-bottom: var(--layout-spacing-48);
+  padding-block-end: var(--layout-spacing-64);
 }
 
 .mc-Company_Logo {
   display: block;
   width: 180px;
   height: 64px;
-  margin-top: calc(-1 * var(--layout-spacing-24));
+  margin-block: var(--layout-spacing-8) var(--layout-spacing-24);
 }
 
 .mc-Company_Logo-inverted {
@@ -39,28 +27,17 @@
   }
 }
 
-.mc-Company_Header,
-.mc-Company_Main {
-  grid-column: 2;
-}
-
-.mc-Company_Meta {
-  grid-row: 1;
-}
-
-.mc-Company_Main h4 {
-  margin-block: 0 calc(var(--layout-spacing-16) * -1);
-}
+/* .mc-Company_Header {} */
 
 .mc-Company_Date {
   padding-block-start: 0;
-
-  @media screen and (min-width: 40rem) {
-    text-align: right;
-  }
 }
 
 .mc-Company_Role {
-  margin-block: calc(var(--layout-spacing-16) * -1);
+  /* margin-block: calc(var(--layout-spacing-16) * -1); */
   color: var(--text-color-secondary);
+}
+
+.mc-Company_Projects {
+  margin-block-end: calc(var(--layout-spacing-40) * -1);
 }

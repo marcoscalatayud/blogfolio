@@ -10,25 +10,19 @@ body.debug {
       to bottom,
       var(--color-link),
       transparent 1px,
-      transparent 8px,
-      var(--color-link) 9px,
-      transparent 9px,
-      transparent 16px,
-      var(--color-link) 17px,
-      transparent 17px,
-      transparent 24px
+      transparent var(--layout-spacing-32)
     );
-  background-size: 100% 24px;
-  background-position: top center;
+  background-size: 100% var(--layout-spacing-32);
+  background-position: left calc(var(--layout-spacing-8) * -1);
 }
 /*
 */
 
 .layout-MainHeader {
-  padding: var(--layout-spacing-8) 0 var(--layout-spacing-24);
+  margin: var(--layout-spacing-8) 0 var(--layout-spacing-24);
 
   @media (width >= 40rem) {
-    padding: var(--layout-spacing-24) 0;
+    margin: var(--layout-spacing-32) 0;
   }
 }
 
@@ -54,8 +48,7 @@ body.debug {
 
 
 .layout-MainFooter {
-  padding-block: var(--layout-spacing-48);
-  margin: 0 auto var(--layout-spacing-24);
+  padding-block: var(--layout-spacing-24);
 }
 
 
@@ -71,6 +64,6 @@ body.debug {
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-inline-start: -50vw;
+  margin-inline-end: -50vw;
 }

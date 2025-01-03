@@ -1,23 +1,21 @@
-.mc-Process {
+.mc-Process_List {
   counter-reset: counter;
 }
 
 .mc-Process_Step {
-  display: grid;
-  grid-template-columns: 5rem auto;
-  margin: 0 0 var(--layout-spacing-48);
-
-  @media (width >= 40rem) {
-    grid-template-columns: var(--layout-indent-left) auto;
-  }
+  list-style: none;
+  padding-inline-start: 6rem;
 }
 
+.mc-Process_Step:not(:last-child) {
+  margin-block-end: var(--layout-spacing-32);
+}
 
 .mc-Process_Step::before {
   counter-increment: counter;
   content: counter(counter);
   display: block;
-  position: relative;
+  position: absolute;
   top: var(--layout-spacing-24);
   left: var(--layout-spacing-16);
   width: var(--layout-spacing-32);
@@ -31,12 +29,13 @@
   transform: scale(2);
 
   @media (width >= 40rem) {
-    left: 4rem;
+    left: 2rem;
   }
 }
 
 .mc-Process_Explanation {
-  margin-block-start: calc(var(--layout-spacing-24) * -1);
+  /* margin-block-start: calc(var(--layout-spacing-24) * -1); */
+  padding: 0;
   color: var(--text-color-secondary);
 }
 

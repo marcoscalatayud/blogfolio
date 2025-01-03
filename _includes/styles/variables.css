@@ -24,12 +24,12 @@
   --layout-spacing-16: 1rem;
   --layout-spacing-24: 1.5rem;
   --layout-spacing-32: 2rem;
-  --layout-spacing-48: 3rem;
+  --layout-spacing-40: 2.5rem;
+  --layout-spacing-64: 4rem;
 
   --layout-sidebar-left: 7rem;
   --layout-indent-left: 8rem;
-  --layout-breakpoint: 40rem;
-  --layout-max-width: 48rem;
+  --layout-max-width: 62ch;
 
   /* Tokenized palette */
 
@@ -55,11 +55,12 @@
   );
 
   @media (width >= 40rem) {
-    --font-size-h1: 2.5rem;
-    --font-size-h2: 1.75rem;
-    --font-size-h3: 1.5rem;
-    --font-size-comfort: 1.25rem;
-    --font-size-base: 1rem;
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.5rem;
+    --font-size-h3: 2rem;
+    --font-size-h4: 1.5rem;
+    --font-size-base: 1.5rem;
+    --font-size-mobile: 1rem;
     --font-size-small: .8rem;
   }
 }

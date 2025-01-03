@@ -36,7 +36,7 @@ Like the rest of the features, **settings have evolved and improved hand in hand
 
 ## Settings in videogames
 
-Since this is not an historical post, we can jump to the most interesting time in videogames: the '90s.<sup><a href="#note-2">2</a></sup>. At that time, videogames could be played in dedicated places (at arcades) or at home (with computers or consoles).
+Since this is not an historical post, we can jump to the most interesting time in videogames: the '90s<sup><a href="#note-2">2</a></sup>. At that time, videogames could be played in dedicated places (at arcades) or at home (with computers or consoles).
 
 ### Arcades
 
@@ -75,11 +75,8 @@ Even though my experience is personal, it's far from unique. There are many reas
 
 Software in general, and videogames in particular, have **positively evolved in these terms** but, until the day that posts like this one feel like obvious, **there's still a lot of work to be done here**.
 
-<br>
-<br>
-<br>
-
 <small>
+
 <sup id="note-1">1</a></sup> At least if you're like me and have had an awful experience with automatic brightness control.
 
 <sup id="note-2">2</a></sup> This is an indisputed totally objective truth which has nothing to do with casually concurring with my childhood.
@@ -87,4 +84,5 @@ Software in general, and videogames in particular, have **positively evolved in 
 <sup id="note-3">3</a></sup> Does this ring the bell? We'll talk about it in a future post of this series.
 
 <sup id="note-4">4</a></sup> Yep, this will probably be another post for this series.
+
 </small>
