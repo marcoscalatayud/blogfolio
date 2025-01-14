@@ -8,18 +8,22 @@ body.debug {
   background-image:
     repeating-linear-gradient(
       to bottom,
-      var(--color-link),
-      transparent 1px,
-      transparent var(--layout-spacing-32)
+      transparent,
+      transparent calc(var(--layout-line) - 1px),
+      var(--color-link) var(--layout-line)
     );
-  background-size: 100% var(--layout-spacing-32);
-  background-position: left calc(var(--layout-spacing-8) * -1);
+  background-size: 100% var(--layout-line);
+
+  @media (width > 40rem) {
+    background-position: left -7px;
+  }
 }
-/*
-*/
 
 .layout-MainHeader {
-  margin: var(--layout-spacing-8) 0 var(--layout-spacing-24);
+
+  @media (width < 40rem) {
+    padding: var(--layout-spacing-24) 0 var(--layout-spacing-16);
+  }
 
   @media (width >= 40rem) {
     margin: var(--layout-spacing-32) 0;
@@ -49,6 +53,10 @@ body.debug {
 
 .layout-MainFooter {
   padding-block: var(--layout-spacing-24);
+
+  @media (width < 40rem) {
+    padding-block: var(--layout-spacing-20);
+  }
 }
 
 
@@ -66,4 +74,18 @@ body.debug {
   right: 50%;
   margin-inline-start: -50vw;
   margin-inline-end: -50vw;
+}
+
+.mc-Section_Header {
+
+  @media (width < 40rem) {
+    padding-block-start: var(--layout-spacing-20);
+  }
+}
+
+.mc-Section_Heading {
+
+  @media (width < 40rem) {
+    padding-block-end: var(--layout-spacing-12);
+  }
 }

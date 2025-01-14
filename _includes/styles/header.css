@@ -1,6 +1,10 @@
 .mc-Header {
   padding: 0;
   margin-inline-end: auto;
+
+  @media (width < 40rem) {
+    margin-block-end: 0;
+  }
 }
 
 .mc-Name {

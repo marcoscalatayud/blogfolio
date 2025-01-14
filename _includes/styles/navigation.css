@@ -1,11 +1,20 @@
 .mc-MainNavigation {
+
   @media screen and (width < 40rem) {
     margin-block-start: calc(var(--layout-spacing-8) * -1);
+
+    @media (width < 40rem) {
+      margin-block-start: var(--layout-spacing-12);
+    }
   }
 }
 
 .mc-Menu {
   display: flex;
+
+  @media (width < 40rem) {
+    padding: 0;
+  }
 
   @media (width >= 40rem) {
     margin-block-start: var(--layout-spacing-24);

@@ -9,6 +9,17 @@
 
 .mc-Process_Step:not(:last-child) {
   margin-block-end: var(--layout-spacing-32);
+
+  @media (width < 40rem) {
+    margin-block-end: var(--layout-spacing-20);
+  }
+}
+
+.mc-Process_Step:last-child {
+
+  @media (width < 40rem) {
+    margin-block-end: var(--layout-spacing-20);
+  }
 }
 
 .mc-Process_Step::before {
@@ -34,9 +45,12 @@
 }
 
 .mc-Process_Explanation {
-  /* margin-block-start: calc(var(--layout-spacing-24) * -1); */
-  padding: 0;
   color: var(--text-color-secondary);
+
+  @media (width < 40rem) {
+    padding-block-start: var(--layout-spacing-24);
+    margin-block-end: calc(var(--layout-spacing-24) * -1);
+  }
 }
 
 .mc-Process_List {

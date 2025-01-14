@@ -1,6 +1,10 @@
 .mc-License {
   padding-block-start: var(--layout-spacing-40);
   color: var(--text-color-secondary);
+
+  @media (width < 40rem) {
+    padding-block-start: 44px;
+  }
 }
 
 .mc-Footer_About {
@@ -9,7 +13,11 @@
   justify-content: center;
   padding: var(--layout-spacing-40) 0 var(--layout-spacing-24);
 
-  @media screen and (width >= 40rem) {
+  @media (width < 40rem) {
+    padding: var(--layout-spacing-40) 0 var(--layout-spacing-20);
+  }
+
+  @media (width >= 40rem) {
     grid-template-columns: 130px 1fr;
     grid-column-gap: var(--layout-spacing-16);
   }
@@ -23,14 +31,14 @@
   border-radius: 100%;
   margin-block-start: calc(var(--layout-spacing-8) * -1);
 
-  @media screen and (width >= 40rem) {
+  @media (width >= 40rem) {
     grid-column: 1;
   }
 }
 
 
 .mc-Footer_Text {
-  @media screen and (width >= 40rem) {
+  @media (width >= 40rem) {
     grid-column: 2;
   }
 }

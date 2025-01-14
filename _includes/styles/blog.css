@@ -1,12 +1,22 @@
-/* .mc-ListPosts_Item {} */
+.mc-ListPosts {
+  padding: 0;
+}
 
 .mc-ListPosts_Item:not(:first-child) {
   margin-block-start: var(--layout-spacing-32);
+
+  @media (width < 40rem) {
+    margin-block-start: var(--layout-spacing-20);
+  }
 }
 
 .mc-ListPosts_Title {
   padding-block-end: 0;
   font-weight: bold;
+
+  @media (width < 40rem) {
+    margin-block-end: calc(var(--layout-spacing-4) * -1);
+  }
 }
 
 .mc-ListPosts_Date {
@@ -18,4 +28,8 @@
 
 .mc-ListPosts_Abstract {
   margin-block-start: calc(var(--layout-spacing-32) * -1);
+
+  @media (width < 40rem) {
+    margin-block-start: calc(var(--layout-spacing-24) * -1);
+  }
 }
