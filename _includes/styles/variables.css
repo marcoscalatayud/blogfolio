@@ -32,7 +32,7 @@
   --layout-spacing-64: 4rem;
 
 
-  --layout-line: var(--layout-spacing-20);
+  --layout-spacing-line: var(--layout-spacing-20);
 
   --layout-sidebar-left: 7rem;
   --layout-indent-left: 8rem;
@@ -70,6 +70,6 @@
     --font-size-mobile: 1rem;
     --font-size-small: .8rem;
 
-    --layout-line: var(--layout-spacing-32);
+    --layout-spacing-line: var(--layout-spacing-32);
   }
 }

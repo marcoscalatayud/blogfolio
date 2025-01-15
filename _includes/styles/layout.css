@@ -9,10 +9,10 @@ body.debug {
     repeating-linear-gradient(
       to bottom,
       transparent,
-      transparent calc(var(--layout-line) - 1px),
-      var(--color-link) var(--layout-line)
+      transparent calc(var(--layout-spacing-line) - 1px),
+      var(--color-link) var(--layout-spacing-line)
     );
-  background-size: 100% var(--layout-line);
+  background-size: 100% var(--layout-spacing-line);
 
   @media (width > 40rem) {
     background-position: left -7px;
