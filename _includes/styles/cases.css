@@ -78,7 +78,6 @@
 
 .cst-Case_Picture img {
   width: 100%;
-  height: 224px;
   object-fit: cover;
 
   @media (width < 40rem) {
@@ -101,12 +100,12 @@
 
   @media (width > 40rem) {
     grid-template-columns: 1fr 1fr;
+    margin-block-end: var(--layout-spacing-32);
   }
 }
 
 .cst-ScreenshotComparison img {
   max-width: 100%;
-  height: auto;
 }
 
 .cst-ScreenshotComparison figure:first-child img {
@@ -115,4 +114,59 @@
 
 .cst-ScreenshotComparison figure:first-child figcaption {
   text-align: right;
+}
+
+.cst-List {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--layout-spacing-20) var(--layout-spacing-64);
+
+  @media (width > 40rem) {
+    gap: var(--layout-spacing-24) var(--layout-spacing-64);
+  }
+}
+
+[class*="cst-Item-"] {
+  border-radius: var(--border-radius-m);
+}
+
+.cst-Item-qatium {
+  background-color: var(--color-qatium);
+}
+
+.cst-Item-aureka {
+  background-color: var(--color-educapoker);
+}
+
+.cst-Link {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: var(--layout-spacing-40) var(--layout-spacing-24) 0;
+  border-radius: var(--border-radius-m);
+  color: inherit;
+  text-decoration: none;
+  outline: var(--layout-spacing-4) solid transparent;
+  outline-offset: var(--layout-spacing-4);
+  transition: .25s ease-in-out outline;
+
+  @media (width >= 40rem) {
+    display: block;
+    padding: 4rem 3rem 0;
+  }
+}
+
+.cst-Link:hover {
+  outline: var(--layout-spacing-4) solid var(--color-link);
+}
+
+.cst-Date {
+  @media (width <= 40rem) {
+    position: relative;
+    top: 2px;
+  }
+
+  @media (width > 40rem) {
+    margin-block-start: calc(var(--layout-spacing-64) * -1);
+  }
 }

@@ -193,7 +193,7 @@ figcaption {
 }
 
 figure img {
-  border-radius: .5rem;
+  border-radius: var(--border-radius-m);
   overflow: hidden;
   height: revert-layer;
   object-fit: cover;
