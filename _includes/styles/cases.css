@@ -95,10 +95,11 @@
 
 .cst-ScreenshotComparison {
   display: grid;
+  grid-template-rows: auto;
   gap: var(--layout-spacing-24);
   margin-block-end: var(--layout-spacing-24);
 
-  @media (width > 40rem) {
+  @media (width > 80rem) {
     grid-template-columns: 1fr 1fr;
     margin-block-end: var(--layout-spacing-32);
   }
@@ -112,8 +113,19 @@
   margin-inline-start: auto;
 }
 
-.cst-ScreenshotComparison figure:first-child figcaption {
-  text-align: right;
+.cst-ScreenshotComparison figcaption {
+  margin: auto;
+  text-align: center;
+}
+
+@media (width > 80rem) {
+  .cst-ScreenshotComparison figure:nth-child(even) figcaption {
+    text-align: left;
+  }
+
+  .cst-ScreenshotComparison figure:nth-child(odd) figcaption {
+    text-align: right;
+  }
 }
 
 .cst-List {
