@@ -11,7 +11,8 @@ navname: "Cases"
 <div class="cst-LayoutArea cst-LayoutArea-hero-qatium">
   <div class="cst-LayoutArea_Content">
     <header class="cst-HeaderHero">
-      <h1>Qatium <span>UX case study</span></h1>
+      <h1>Qatium <span>design case study</span></h1>
+      <p>2022 &mdash; 2024</p>
     </header><!-- .header-hero -->
   </div><!-- .cst-LayoutArea_Content -->
 </div><!-- .cst-LayoutArea -->
@@ -64,6 +65,9 @@ Here's a proposal to update our pressure visualization palette to more contrasti
   <div class="cst-ScreenshotComparison">
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/contrast-before.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/contrast-before.png"
         alt=""
         width="1140" height="768">
@@ -74,6 +78,9 @@ Here's a proposal to update our pressure visualization palette to more contrasti
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/contrast-after.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/contrast-after.png"
         alt=""
         width="1140" height="768">
@@ -89,13 +96,16 @@ Here's a proposal to update our pressure visualization palette to more contrasti
 
 #### 8pt grid
 
-The overall Graphics User Interface looked okay at first glance but, once the more you kept looking the more you noticed **some quirks that made the GUI look funny**. It was due to the lack of a grid.
+The overall Graphics User Interface looked okay at first glance but, the more you kept looking the more you noticed **some quirks that made the GUI look funny**. It was due to the lack of a grid.
 
 We reworked our components to **fit into an 8pt grid** and everything began to fall into place nicely.
 
 <div class="cst-ScreenshotComparison">
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/8pt-toggle-before.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/8pt-toggle-before.png"
       alt=""
       width="240" height="128">
@@ -106,6 +116,9 @@ We reworked our components to **fit into an 8pt grid** and everything began to f
   </figure>
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/8pt-toggle-after.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/8pt-toggle-after.png"
       alt=""
       width="240" height="128">
@@ -119,6 +132,9 @@ We reworked our components to **fit into an 8pt grid** and everything began to f
 <div class="cst-ScreenshotComparison">
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/8pt-toggle-popover-before.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/8pt-toggle-popover-before.png"
       alt=""
       width="506" height="416">
@@ -129,6 +145,9 @@ We reworked our components to **fit into an 8pt grid** and everything began to f
   </figure>
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/8pt-toggle-popover-after.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/8pt-toggle-popover-after.png"
       alt=""
       width="506" height="416">
@@ -153,10 +172,13 @@ We also needed to build new icons for new features. To **keep consistency betwee
 - Drawing them at the final size they were being used in the product.
 - Making sure the vertices snapped to the grid.
 
-    </div><!-- .qtm-Case_Content -->
-    <aside class="qtm-Case_Aside">
+    </div><!-- .cst-Case_Content -->
+    <aside class="cst-Case_Aside">
       <figure>
-        <picture class="qtm-Case_Picture">
+        <picture class="cst-Case_Picture">
+          <source
+              srcset="/assets/images/case-qatium/icon-pixel-snap.webp 1x"
+              type="image/webp">
           <img src="/assets/images/case-qatium/icon-pixel-snap.png"
           alt=""
           width="336" height="640">
@@ -176,6 +198,9 @@ We had a **grayscale with 14 steps** (including black and white) &mdash;which se
 
 <figure>
   <picture class="qtm-Case_Picture">
+    <source
+        srcset="/assets/images/case-qatium/grayscale.webp 1x"
+        type="image/webp">
     <img src="/assets/images/case-qatium/grayscale.png"
     alt=""
     width="582" height="416">
@@ -191,6 +216,9 @@ So I **iterated some alternatives** to reduce the number of grays to a more reas
   <div class="cst-ScreenshotComparison">
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/grayscale-original.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/grayscale-original.png"
         alt=""
         width="1140" height="768">
@@ -201,6 +229,9 @@ So I **iterated some alternatives** to reduce the number of grays to a more reas
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/grayscale-update.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/grayscale-update.png"
         alt=""
         width="1140" height="768">
@@ -229,6 +260,9 @@ Among other things, we conducted card sorting exercises to understand how differ
   <div class="cst-ScreenshotComparison">
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/card-sorting-a.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/card-sorting-a.png"
         alt=""
         width="1140" height="768">
@@ -239,6 +273,9 @@ Among other things, we conducted card sorting exercises to understand how differ
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/card-sorting-b.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/card-sorting-b.png"
         alt=""
         width="1140" height="768">
@@ -249,6 +286,9 @@ Among other things, we conducted card sorting exercises to understand how differ
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/card-sorting-c.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/card-sorting-c.png"
         alt=""
         width="1140" height="768">
@@ -259,6 +299,9 @@ Among other things, we conducted card sorting exercises to understand how differ
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/card-sorting-d.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/card-sorting-d.png"
         alt=""
         width="1140" height="768">
@@ -282,6 +325,9 @@ Users were requesting a light theme from some time. It would've been easy and qu
   <div class="cst-ScreenshotComparison">
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/rearrange-original.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/rearrange-original.png"
         alt=""
         width="1140" height="768">
@@ -292,6 +338,9 @@ Users were requesting a light theme from some time. It would've been easy and qu
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/rearrange-light-theme.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/rearrange-light-theme.png"
         alt=""
         width="1140" height="768">
@@ -315,6 +364,9 @@ This may seem trivial but this **lack of polish is perceived by the users as a l
 <div class="cst-ScreenshotComparison">
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/tweaks-with-badge-before.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/tweaks-with-badge-before.png"
       alt=""
       width="292" height="480">
@@ -325,6 +377,9 @@ This may seem trivial but this **lack of polish is perceived by the users as a l
   </figure>
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/tweaks-with-badge-after.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/tweaks-with-badge-after.png"
       alt=""
       width="292" height="480">
@@ -340,6 +395,9 @@ This may seem trivial but this **lack of polish is perceived by the users as a l
   <div class="cst-ScreenshotComparison">
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/alignment-before.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/alignment-before.png"
         alt=""
         width="292" height="480">
@@ -350,6 +408,9 @@ This may seem trivial but this **lack of polish is perceived by the users as a l
     </figure>
     <figure>
       <picture class="cst-Case_Picture">
+        <source
+            srcset="/assets/images/case-qatium/alignment-after.webp 1x"
+            type="image/webp">
         <img src="/assets/images/case-qatium/alignment-after.png"
         alt=""
         width="292" height="480">
@@ -369,9 +430,12 @@ The software was desktop-first. It was a reasonable approach since it had lots o
 
 In "slack time", I quietly studied how to reorganize the GUI for a mobile device; and eventually implemented it. The before and after screenshots spoke for themselves.
 
-<div class="cst-ScreenshotComparison">
+<div class="cst-ScreenshotComparison-portrait">
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/responsive-retrofit-iphone-before.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/responsive-retrofit-iphone-before.png"
       alt=""
       width="292" height="800">
@@ -382,6 +446,9 @@ In "slack time", I quietly studied how to reorganize the GUI for a mobile device
   </figure>
   <figure>
     <picture class="cst-Case_Picture">
+      <source
+          srcset="/assets/images/case-qatium/responsive-retrofit-iphone-after.webp 1x"
+          type="image/webp">
       <img src="/assets/images/case-qatium/responsive-retrofit-iphone-after.png"
       alt=""
       width="292" height="800">
