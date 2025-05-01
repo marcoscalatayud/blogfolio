@@ -7,13 +7,17 @@
   margin-block: calc(var(--layout-spacing-8) * -1) var(--layout-spacing-40);
 
   @media (width < 40rem) {
-    padding-block: 200px var(--layout-spacing-20);
+    padding-block: 120px var(--layout-spacing-20);
     margin-block: var(--layout-spacing-20) var(--layout-spacing-40);
   }
 }
 
 .cst-LayoutArea-hero-educapoker {
   background-color: var(--color-educapoker);
+}
+
+.cst-LayoutArea-hero-happydonia {
+  background-color: var(--color-happydonia);
 }
 
 .cst-LayoutArea-hero-qatium {
@@ -60,10 +64,12 @@
 }
 
 .cst-Case_Content {
+  padding-inline: var(--layout-spacing-24);
   grid-column: 2 / 3;
 }
 
 .cst-Case_Aside {
+  padding-block-start: var(--layout-spacing-64);
   grid-column: 3 / 4;
   display: flex;
   flex-flow: column nowrap;
@@ -77,11 +83,11 @@
 }
 
 .cst-Case_Picture img {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
 
   @media (width < 40rem) {
-    height: 120px;
+    height: 240px;
   }
 }
 
@@ -93,7 +99,7 @@
   color: color-mix(in srgb, var(--text-color-primary) 70%, var(--color-background-primary));
 }
 
-.cst-ScreenshotComparison {
+[class*="cst-ScreenshotComparison"] {
   display: grid;
   grid-template-rows: auto;
   gap: var(--layout-spacing-24);
@@ -105,27 +111,35 @@
   }
 }
 
-.cst-ScreenshotComparison img {
-  max-width: 100%;
+[class*="cst-ScreenshotComparison"] img {
+  width: 100%;
 }
 
-.cst-ScreenshotComparison figure:first-child img {
+[class*="cst-ScreenshotComparison"] figure:first-child img {
   margin-inline-start: auto;
 }
 
-.cst-ScreenshotComparison figcaption {
+[class*="cst-ScreenshotComparison"] figcaption {
   margin: auto;
   text-align: center;
 }
 
 @media (width > 80rem) {
-  .cst-ScreenshotComparison figure:nth-child(even) figcaption {
+  [class*="cst-ScreenshotComparison"] figure:nth-child(even) figcaption {
     text-align: left;
   }
 
-  .cst-ScreenshotComparison figure:nth-child(odd) figcaption {
+  [class*="cst-ScreenshotComparison"] figure:nth-child(odd) figcaption {
     text-align: right;
   }
+}
+
+.cst-ScreenshotComparison-portrait {
+  grid-template-columns: 1fr 1fr;
+}
+
+.cst-ScreenshotComparison-portrait img {
+  height: auto;
 }
 
 .cst-List {
@@ -144,6 +158,10 @@
 
 .cst-Item-qatium {
   background-color: var(--color-qatium);
+}
+
+.cst-Item-happydonia {
+  background-color: var(--color-happydonia);
 }
 
 .cst-Item-aureka {
@@ -181,4 +199,17 @@
   @media (width > 40rem) {
     margin-block-start: calc(var(--layout-spacing-64) * -1);
   }
+}
+
+.cst-LayoutArea-hero-happydonia ~ * img {
+  height: auto;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+.cst-Item-qatium,
+.cst-LayoutArea-hero-qatium {
+  view-transition-name: --morphy;
 }
