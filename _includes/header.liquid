@@ -10,7 +10,7 @@
       <ul class="mc-Menu">
         {%- for section in navigation -%}
           <li class="mc-Menu_Item">
-              <a class="mc-Menu_Link{% if page.url == section.url %}-active{% endif %}" href="{{section.url}}">{{section.title}}</a>
+              <a class="mc-Menu_Link{% if navname == section.url %}-active{% endif %}" href="{{section.url}}">{{section.title}}</a>
           </li>
         {%- endfor -%}
       </ul>

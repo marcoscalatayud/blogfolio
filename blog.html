@@ -2,13 +2,14 @@
 eleventyImport:
 collections: ["post"]
 layout: default
-title: "Blog - Marcos Calatayud - UX designer"
-navname: Blog
+title: "Blog - Marcos Calatayud - Designer"
+navname: "/blog/"
+heading: "Blog"
 ---
 
 <section class="mc-Section">
   <header class="mc-Section_Header">
-    <h1 class="mc-Section_Heading">{{ navname }}</h1>
+    <h1 class="mc-Section_Heading">{{ heading }}</h1>
   </header>
   <ul class="mc-ListPosts">
     {% for post in collections.post reversed %}

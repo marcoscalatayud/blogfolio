@@ -2,7 +2,7 @@
 layout: case
 title: "Qatium design case study"
 type: casestudy
-navname: "Cases"
+navname: "/case-studies/"
 ---
 
 <div class="layout-Content-maxWidth">
