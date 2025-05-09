@@ -1,6 +1,51 @@
+.mc-Footer_List {
+  display: flex;
+  gap: var(--layout-spacing-24);
+  justify-content: center;
+
+  @media (width >= 40rem) {
+    gap: var(--layout-spacing-40);
+  }
+}
+
+.mc-Footer_Item {}
+
+.mc-Footer_Link {
+  display: flex;
+  align-items: center;
+  gap: var(--layout-spacing-8);
+}
+
+[class*="mc-Footer_Icon"] {
+  display: block;
+  width: var(--layout-spacing-24);
+  aspect-ratio: 1;
+  background: center center no-repeat;
+  background-size: contain;
+
+  @media (width >= 40rem) {
+    width: var(--layout-spacing-40);
+  }
+
+  @media (prefers-color-scheme: light) {
+    filter: invert(100%);
+  }
+}
+
+.mc-Footer_Icon--bluesky {
+  background-image: url('/assets/images/icons/network-icon-bluesky.svg');
+}
+.mc-Footer_Icon--github {
+  background-image: url('/assets/images/icons/network-icon-github.svg');
+}
+.mc-Footer_Icon--linkedin {
+  background-image: url('/assets/images/icons/network-icon-linkedin.svg');
+}
+
 .mc-License {
   padding-block-start: var(--layout-spacing-40);
   color: var(--text-color-secondary);
+  text-align: center;
 
   @media (width < 40rem) {
     padding-block-start: 44px;

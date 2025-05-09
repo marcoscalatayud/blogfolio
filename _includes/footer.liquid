@@ -1,4 +1,14 @@
 <footer class="layout-MainFooter">
+  <ul class="mc-Footer_List">
+    {%- for network in footerList -%}
+      <li class="mc-Footer_Item">
+        <a href="{network.link}" class="mc-Footer_Link">
+          <span class="mc-Footer_Icon--{{ network.icon }}"></span>
+          {{ network.network }}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
   <p class="mc-License">
     <a href="https://creativecommons.org/licenses/by-nc/4.0/"><abbr title="Creative Commons License - Attribution, No Derivatives">[cc by-nd]</abbr></a>
 

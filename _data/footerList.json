@@ -1,0 +1,17 @@
+[
+  {
+    "network": "Bluesky",
+    "icon": "bluesky",
+    "link": "https://bsky.app/profile/marcoscalatayud.bsky.social"
+  },
+  {
+    "network": "Github",
+    "icon": "github",
+    "link": "https://github.com/marcoscalatayud/blogfolio"
+  },
+  {
+    "network": "LinkedIn",
+    "icon": "linkedin",
+    "link": "https://www.linkedin.com/in/marcoscalatayud/"
+  }
+]
