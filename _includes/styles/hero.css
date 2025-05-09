@@ -1,3 +1,10 @@
+.mc-Hero {
+  display: flex;
+  flex-direction: row;
+  gap: var(--layout-spacing-24);
+  padding-block: var(--layout-spacing-40);
+}
+
 .mc-Proposition {
   font-size: var(--font-size-h1);
 }
